@@ -8,8 +8,8 @@ import streamlit as st
 from io import StringIO
 import time
 
-# nltk.download('punkt')
-# nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('stopwords')
 
 st.header(':blue[Text Analysis] with _:green[NLTK], :green[Vader], and :green[TextBlob]_')
 
