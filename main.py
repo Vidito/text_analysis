@@ -7,6 +7,9 @@ import streamlit as st
 from io import StringIO
 import time
 
+nltk.download('punkt')
+nltk.download('stopwords')
+
 st.header(':blue[Text Analysis] with _:green[NLTK], :green[Vader], and :green[TextBlob]_')
 
 st.subheader('Only upload a file with .txt format')
