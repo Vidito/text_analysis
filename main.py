@@ -13,7 +13,9 @@ nltk.download('stopwords')
 
 st.header(':blue[Text Analysis] with _:green[NLTK], :green[Vader], and :green[TextBlob]_')
 
-st.subheader('Only upload a file with .txt format')
+st.subheader('Only upload a file with .txt format. Note that it might take around one minute to process')
+st.raw(' ** TextBlob Polarity is a number from -1 (Most Negative) to +1 (Most Positive)')
+st.raw(' ** Subjectivity under TextBlob is between 0 (Most Objective) to +1 (Most Subjective)')
 
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
